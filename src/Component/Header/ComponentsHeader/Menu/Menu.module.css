@@ -1,0 +1,222 @@
+.microcontent {
+  position: absolute;
+  right: 8%;
+  top: 35px;
+  width: 30px;
+  height: 25px;
+  cursor: pointer;
+  z-index: 2;
+  overflow-x: hidden;
+}
+.upline {
+    position: absolute;
+    border-left: 30px solid rgb(165, 164, 164);
+    height: 4px;
+    border-radius: 3px;
+    right: 0%;
+    transform: rotate(0deg);
+    transition: transform 0.3s, border-width 0.3s, top 0.3s ease;
+    border-width: 30px;
+}
+.midleline {
+   position: absolute;
+   border-left: 30px solid rgb(165, 164, 164);
+    height: 4px;
+    top: 10px;
+    border-radius: 3px;
+    right: 0%;
+    transition: right 0.3s, border-width 0.3s ease;
+}
+.downline {
+    position: absolute;
+    border-left: 30px solid rgb(165, 164, 164);
+    border-width: 30px;
+    height: 4px;
+    top: 20px;
+    border-radius: 3px;
+    right: 0%;
+    transform: rotate(0deg);
+    transition: transform 0.3s, border-width 0.3s, top 0.3s ease;
+
+
+}
+.uplineopen {
+  top: 10px;
+  transform: rotate(-45deg);
+  transition: transform 0.3s, border-width 0.3s, top 0.3s ease;
+  border-width: 23px;
+}
+.midlelineopen {
+  right: 50%;
+  border-width: 0px;
+  transition: right 0.3s, border-width 0.3s ease;
+  
+}
+.downlineopen {
+  top: 10px;
+  transition: transform 0.3s, border-width 0.3s, top 0.3s ease;
+  transform: rotate(45deg);
+  border-width: 23px;
+}
+.background {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px 4px rgb(219, 218, 218);
+  width: 0px;
+  height: 0px;
+  right: 6%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: width 0.5s, height 0.5s, opacity 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+.backgroundopen {
+  position: absolute;
+  box-shadow: 0px 4px 7px 4px rgba(0, 0, 0, 0.151);
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  right: 6.5%;
+  height: 200px;
+  top: 25px;
+  opacity: 1;
+  border-radius: 15px;
+  transition: width 0.5s, height 0.5s, opacity 0.4s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+.backgroundIPad {
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 4px 4px 4px rgb(219, 218, 218);
+  width: 0px;
+  height: 50px;
+  right: 6%;
+  border-radius: 15px;
+  opacity: 0;
+  transition: width 0.5s, height 0.5s, opacity 0.4s ease;
+  overflow: hidden;
+  z-index: 1;
+}
+.backgroundIPadopen {
+  position: absolute;
+  box-shadow: 0px 4px 7px 4px rgba(0, 0, 0, 0.151);
+  background-color: rgb(255, 255, 255);
+  width: 200px;
+  right: 6.5%;
+  height: 50px;
+  top: 25px;
+  opacity: 1;
+  border-radius: 15px;
+  transition: width 0.5s, height 0.5s, opacity 0.4s ease;
+  z-index: 1;
+  overflow: hidden;
+}
+.loginopen {
+  position: absolute;
+  width: 150px;
+  top: 140px;
+  left: 22px;
+  opacity: 1;
+}
+.searchbackground {
+  position: absolute;
+  outline: 1px solid #B4B4B4;
+  top: 150px;
+  width: 35px;
+  left: 120px;
+  height: 30px;
+  border-radius: 4px;
+  transition: width 0.3s, left 0.3s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+.searchopen {
+  position: absolute;
+  left: 9px;
+  top: 8px;
+  width: 14px;
+}
+.basketbackground {
+  position: relative;
+  outline: 1px solid #B4B4B4;
+  top: 150px;
+  width: 35px;
+  left: 80px;
+  height: 30px;
+  border-radius: 4px;
+  transition: width 0.3s, left 0.3s ease;
+  overflow: hidden;
+}
+
+.basketbackgroundIPad::after{
+  display: none;
+  content: "";
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  top: 2px;
+  right: 2px;
+
+  background-color: orange;
+  border-radius: 10px;
+}
+.basketbackgroundIPad {
+  outline: 1px solid #B4B4B4;
+  padding: 9px 10px 10px 10px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: 9%;
+  top: 26px;
+  cursor: pointer;
+  transition: right 0.5s ease;
+  border-radius: 4px;
+  transition: width 0.3s, left 0.3s ease;
+  overflow: hidden;
+}
+.textcontainer {
+  position: absolute;
+  font-family: "MontserratR";
+  font-size: 14px;
+  left: 41px;
+  top: 7px;
+  color: #666666;
+}
+.badgebackground {
+  position: absolute;
+  outline: 1px solid #B4B4B4;
+  top: 150px;
+  width: 35px;
+  left: 40px;
+  height: 30px;
+  border-radius: 4px;
+  transition: width 0.3s, left 0.3s ease;
+  overflow: hidden;
+}
+.badgebackground:hover {
+  width: 175px;
+  left: 10px;
+}
+.basketbackground:hover {
+  width: 175px;
+  text-align: center;
+  left: 10px;
+}
+.searchbackground:hover {
+  width: 175px;
+  left: 10px;
+}
+.leftallhide {
+  left: -50px;
+  pointer-events: none;
+}
+.rigthallhide {
+  left: 220px;
+  pointer-events: none;
+}
+.badgeopen {
+  position: absolute;
+  left: 9px;
+  top: 7px;
+}

@@ -1,0 +1,161 @@
+.content {
+  width: 100%;
+  height: 30%;
+  position: relative;
+}
+.photo {
+  position: relative;
+  width: 100%;
+}
+.blured {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 99%;
+  backdrop-filter: blur(1px);
+}
+.text {
+  position: absolute;
+  font-family: InterL;
+  width: 100%;
+  font-size: 55px;
+  top: 45%;
+  color: rgba(255, 255, 255, 0.678);
+  text-align: center;
+}
+.container {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  left: 0%;
+}
+.info {
+  position: relative;
+  width: 250px;
+  left: 110px;
+  top: 150px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.infotext {
+  position: absolute;
+  font-family: InterL;
+  font-size: 35px;
+  top: 50px;
+  left: 200px;
+  color: rgb(128, 127, 127);
+  width: 200px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.maptext {
+  position: absolute;
+  font-family: InterL;
+  font-size: 35px;
+  top: 50px;
+  left: 64.5%;
+  color: rgb(128, 127, 127);
+  width: 200px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.mappos {
+  position: absolute;
+  left: 53%;
+  width: 35%;
+  top: 125px;
+  transition: left 0.5s, top 0.5s ease;
+}
+.map {
+  position: relative;
+  outline: 1px solid #B4B4B4;
+  border: none;
+  margin: 0px auto; 
+  border-radius: 10px;
+  width: 100%;
+  height: 450px;
+}
+@media (max-width: 1200px) {
+  .maptext {
+    left: 60.5%;
+  }
+}
+@media (max-width: 900px) {
+  .maptext {
+    left: 56.5%;
+  }
+}
+
+@media (max-width: 760px) {
+  .container {
+    height: 1000px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    left: 35%;
+  }
+  .mappos {
+    position: relative;
+    left: 7%;
+    width: 90%;
+  }
+  .info {
+    position: relative;
+    left: 32%;
+    top: 50px;
+  }
+  .infotext {
+    position: relative;
+    left: 45%;
+  }
+  .text {
+    width: 100%;
+    font-size: 28px;
+    top: 50%;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .infotext {
+    position: relative;
+    left: 43%;
+  }
+  .info {
+    position: relative;
+    left: 21%;
+    top: 50px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    left: 26%;
+  }
+  .mappos {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .infotext {
+    position: relative;
+    left: 43%;
+  }
+  .info {
+    position: relative;
+    left: 19%;
+    top: 50px;
+  }
+  .maptext {
+    position: relative;
+    top: 90px;
+    text-align: center;
+    left: 24%;
+  }
+  .mappos {
+    position: relative;
+    left: 0%;
+    width: 100%;
+  }
+  
+}
